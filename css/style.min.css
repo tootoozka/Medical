@@ -226,6 +226,47 @@ h6 {
     display: none;
   }
 }
+.header__phone {
+  display: flex;
+  align-self: center;
+  height: 33px;
+  font-family: "Asap";
+  font-style: normal;
+  font-weight: 400;
+}
+@media (max-width: 951px) {
+  .header__phone {
+    display: none;
+  }
+}
+.header__phone__icon {
+  height: 33px;
+  width: 35px;
+  padding-right: 12px;
+  margin-top: -1px;
+}
+.header__phone__container {
+  height: 35px;
+  width: 183px;
+}
+@media (max-width: 951px) {
+  .header__phone__container {
+    height: fit-content;
+  }
+}
+.header__phone__text {
+  text-transform: capitalize;
+  font-size: 14px;
+  line-height: 16px;
+  color: #7D7D7D;
+  margin-top: -3px;
+}
+.header__phone__number {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 2px;
+}
 
 .menuControl {
   position: absolute;
@@ -390,48 +431,6 @@ h6 {
 }
 .menu__item_bold {
   font-weight: 700;
-}
-
-.phone {
-  display: flex;
-  align-self: center;
-  height: 33px;
-  font-family: "Asap";
-  font-style: normal;
-  font-weight: 400;
-}
-@media (max-width: 951px) {
-  .phone {
-    display: none;
-  }
-}
-.phone__icon {
-  height: 33px;
-  width: 35px;
-  padding-right: 12px;
-  margin-top: -1px;
-}
-.phone__container {
-  height: 35px;
-  width: 183px;
-}
-@media (max-width: 951px) {
-  .phone__container {
-    height: fit-content;
-  }
-}
-.phone__text {
-  text-transform: capitalize;
-  font-size: 14px;
-  line-height: 16px;
-  color: #7D7D7D;
-  margin-top: -3px;
-}
-.phone__number {
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 16px;
-  margin-top: 2px;
 }
 
 .wrapper-main__footer {
