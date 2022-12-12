@@ -1178,6 +1178,11 @@ body.noScroll {
   line-height: 29px;
   letter-spacing: 0px;
 }
+@media (max-width: 795px) {
+  .content-wide__text {
+    padding: 0px 10px 0px 10px;
+  }
+}
 .content-wide__button {
   position: absolute;
   top: 206px;
