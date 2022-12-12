@@ -1295,14 +1295,14 @@ body.noScroll {
     top: 25px;
   }
 }
-__control1 .dropDown__control1-vl, .dropDown__control2-vl, .dropDown__control3-vl {
+.dropDown__control1-vl, .dropDown__control2-vl, .dropDown__control3-vl {
   position: absolute;
   left: 7.615px;
   height: 18px;
   width: 2.77px;
   background-color: rgb(0, 0, 0);
 }
-__control1 .dropDown__control1-vl._active, .dropDown__control2-vl._active, .dropDown__control3-vl._active {
+.dropDown__control1-vl._active, .dropDown__control2-vl._active, .dropDown__control3-vl._active {
   background-color: rgb(14, 119, 175);
   border: 1px;
   border-radius: 25%;
@@ -1312,7 +1312,7 @@ __control1 .dropDown__control1-vl._active, .dropDown__control2-vl._active, .drop
   transition: opacity 0.5s, width 2s, left 2s;
 }
 @media (max-width: 960px) {
-  __control1 .dropDown__control1-vl._active, .dropDown__control2-vl._active, .dropDown__control3-vl._active {
+  .dropDown__control1-vl._active, .dropDown__control2-vl._active, .dropDown__control3-vl._active {
     left: -200px;
   }
 }
