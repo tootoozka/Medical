@@ -278,6 +278,11 @@ h6 {
   left: auto;
   z-index: 100;
   border-radius: 50%;
+  height: 26px;
+  width: 26px;
+  top: 10px;
+  right: 10px;
+  left: auto;
 }
 @media (min-width: 952px) {
   .menuControl {
@@ -289,51 +294,27 @@ h6 {
     transition: transform 0.5s ease-in-out;
   }
 }
-@media (max-width: 767px) {
-  .menuControl {
-    height: 26px;
-    width: 26px;
-    top: 10px;
-    right: 10px;
-    left: auto;
-  }
-}
 .menuControl._active {
   transform: rotate(315deg);
 }
 .menuControl__hl {
-  height: 6px;
-  width: 70px;
+  height: 4px;
+  width: 26px;
+  margin-top: 11px;
   background-color: black;
-  margin-top: 32px;
   border-radius: 6px;
-}
-@media (max-width: 767px) {
-  .menuControl__hl {
-    height: 4px;
-    width: 26px;
-    margin-top: 11px;
-  }
 }
 .menuControl__hl._active {
   background-color: antiquewhite;
 }
 .menuControl__vl {
-  height: 70px;
-  width: 6px;
   background-color: black;
-  margin-left: 32px;
+  height: 26px;
+  width: 4px;
+  margin-left: 11px;
+  top: -15.5px;
   position: relative;
-  top: -38px;
   border-radius: 6px;
-}
-@media (max-width: 767px) {
-  .menuControl__vl {
-    height: 26px;
-    width: 4px;
-    margin-left: 11px;
-    top: -15.5px;
-  }
 }
 .menuControl__vl._active {
   background-color: antiquewhite;
@@ -343,13 +324,14 @@ h6 {
   background-image: url("../img/main_logo.svg");
   background-repeat: no-repeat;
   background-color: #f2f2f2;
-  background-position: 25px;
+  background-position: 10px;
+  background-size: 40px;
   width: 100%;
-  height: 113px;
+  height: 44px;
   margin-bottom: 6px;
   text-align: center;
-  line-height: 113px;
-  font-size: 45px;
+  line-height: 44px;
+  font-size: 24px;
   font-weight: 700;
 }
 @media (max-width: 767px) {
@@ -358,12 +340,13 @@ h6 {
   }
   .banner._active {
     display: block;
-    height: 44px;
-    margin-bottom: 6px;
-    line-height: 44px;
-    font-size: 24px;
-    background-size: 40px;
-    background-position: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .banner {
+    text-align: right;
+    padding-right: 27px;
+    font-size: 18px;
   }
 }
 @media (min-width: 952px) {
@@ -415,18 +398,19 @@ h6 {
   .menu__item {
     color: antiquewhite;
     font-size: 0px;
-    line-height: 25px;
+    line-height: 0px;
     font-weight: 700;
     padding-bottom: 24px;
-    transform: translateX(-1000px);
+    transform: translateX(-150px);
   }
   .menu__item:last-child {
     padding-bottom: 25px;
   }
   .menu__item._active {
+    line-height: 25px;
     font-size: 20px;
     transform: translateX(0px);
-    transition: transform 1.5s cubic-bezier(1, 0.1, 0.31, 1.6) 0.2s;
+    transition: all 1.5s cubic-bezier(1, 0.1, 0.31, 1.6) 0.2s;
   }
 }
 .menu__item_bold {
